@@ -1,38 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Password Generator</title>
-  </head>
-  <body>
-<div class="container-fluid bg-light">
-  <div class="container">
-      <header>
-          <h1 class="text-center">Password Generator</h1>
-        </header>
-  <div class="row">
-  <div class="col-12">
-      <div class="container bg-white my-4 py-2 clearfix col-sm-12 col-md-8">
-          <div class="h3 text-dark weight-bold">Generate a Password</div>
-          <form>
-          <div class="form-group">
-              <input class="form-control form-control-lg rows-6" type="text" placeholder="">
-          </div>
-                <button type="button" class="btn btn-danger btn-lg float-left rounded-pill" onclick=generatePassword()>Generate Password</button>
-                <button type="button" class="btn btn-secondary btn-lg float-right rounded-pill">Copy to Clipboard</button>
-          </form>
-      </div><!-- container white -->
-  </div><!--col-->
-</div><!--row-->
-</div><!--container light-->
-</div>
-<script type="text/javascript">
 // have a container that holds all the upper lower alphabet, numbers, special characters
 // *This changed quickly when I started to the whole string, modified approach
 
@@ -111,11 +76,7 @@ console.log(resultsD);
 // } 
 // console.log("password is " + finalresults);
 
-document.getElementsById("readonly").spCh = resultsE;
+document.getElementsByClassName("form-control").resultsD.length = resultsD;
 
 }
 
-</script>
-
-  </body>
-</html>
