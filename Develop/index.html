@@ -19,7 +19,7 @@
         </header>
   <div class="row">
   <div class="col-12">
-      <div class="container bg-white my-4 py-2 clearfix">
+      <div class="container bg-white my-4 py-2 clearfix col-sm-12 col-md-8">
           <div class="h3 text-dark weight-bold">Generate a Password</div>
           <form>
           <div class="form-group">
@@ -35,6 +35,16 @@
 </div>
 
 <script type="text/javascript">
+// have a container that holds all the upper lower alphabet, numbers, special characters
+
+// tell the computer to randomly pick characters from the container  
+
+// then place the randomly picked character in another container until it reaches the min or max point
+
+// when it reaches min or max, display random generated password
+
+
+
 
 var characters = [ "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 ];
@@ -43,9 +53,10 @@ function generatePassword(){
 
 }
 
-for ( var a = 0; a < characters.length; a++){
-password = password + characters(math.random)
+for ( var a = 0; a <= characters.length; a++){
+alert("test " + characters[a]);  
 }
+
 
 </script>
 
