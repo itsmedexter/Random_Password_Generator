@@ -46,16 +46,39 @@
 
 
 
-var characters = [ "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+var char = [ "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 ];
 
-function generatePassword(){
+var abclow = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
-}
+var abcUp = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
-for ( var a = 0; a <= characters.length; a++){
-alert("test " + characters[a]);  
-}
+var spCh = ["!", "@", "#", "$", "%", "^", "&", "(", ")", "_", "-", "~", ":", ";", "/", "?", "{", "}", "|", 
+"[", "]"]
+
+var results = "";
+
+
+
+
+// function generatePassword(){
+
+// }
+
+// for (var a = 0; a < abcUp.length; a++){
+//   if (abcUp[a].charAt(0) === "D"){
+//     console.log("Starts with a D " + studentsRow2[a]);
+//   }
+// }
+
+
+// var emptyString = "";
+// var alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+while (results.length < 10) {
+ results += abclow[Math.floor(Math.random() * abclow.length)];
+} 
+console.log(results);
 
 
 </script>
