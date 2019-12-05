@@ -32,19 +32,20 @@ var finalResults = "";
 // var numbPrompt = confirm("Must be have Numbers");
 // var abcLowPrompt = confirm("Must have lowercase characters");
 // var abcUpPrompt = confirm("Must have uppercase characters");
-var howLong = prompt("Type in a password.");
+var howLong = prompt("How many characters would you like your password to contain.");
 
 if ( howLong < 8 ) {
-  alert("Press red button to generate.");
+  alert("Password length must be 8 characters long..");
 }
 
 else if ( howLong > 8 ) {
-  alert("Password must be between 8 and 128 with upper, lower, and special characters.");
+  alert("Click OK to confirm including special characters.");
+  alert("Click OK to confirm including number characters.");
+  alert("Click OK to confirm including lowercase characters.");
+  alert("Click OK to confirm including uppercase characters.");
+
 }
 
-else {
-    alert("Press OK to generate password.");
-}
 
 
 
