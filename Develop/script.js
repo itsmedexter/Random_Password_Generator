@@ -25,9 +25,26 @@ var resultsA = "";
 var resultsB = "";
 var resultsC = "";
 var resultsD = "";
-var resultsE = [resultsA += resultsB += resultsC += resultsD];
-var finalresults = "";
+var resultsE = resultsA + resultsB + resultsC + resultsD;
+var finalResults = "";
 
+// var spChPrompt = confirm("Must have Special Characters");
+// var numbPrompt = confirm("Must be have Numbers");
+// var abcLowPrompt = confirm("Must have lowercase characters");
+// var abcUpPrompt = confirm("Must have uppercase characters");
+var howLong = prompt("Type in a password.");
+
+if ( howLong < 8 ) {
+  alert("Press red button to generate.");
+}
+
+else if ( howLong > 8 ) {
+  alert("Password must be between 8 and 128 with upper, lower, and special characters.");
+}
+
+else {
+    alert("Press OK to generate password.");
+}
 
 
 
@@ -71,12 +88,28 @@ while (resultsD.length < 10) {
 console.log(resultsD);
 
 // Loop for all four to crashes browser 
-// while (finalresults.length < 10) {
-//  finalresults += resultsE[Math.floor(Math.random() * resultsE.length)];
-// } 
-// console.log("password is " + finalresults);
+while (finalresults.length < 10) {
+ finalresults += resultsE[Math.floor(Math.random() * resultsE.length)];
+} 
+console.log("password is " + finalResults);
 
-document.getElementsByClassName("form-control").resultsD.length = resultsD;
+onclick.getElementById("buttonG").value = finalresults;
+console.log("2" + finalResults);
+
+document.getElementById("finaltext").textContent = finalResults;
+console.log("this " + finalResults);
+
+// copy command
+function myFunction() {
+  var copyText = document.getElementById("copyb");
+  copyText.select();
+  copyText.setSelectionRange(0, 128)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
 
 }
 
+
+// text content, words, html for document value
