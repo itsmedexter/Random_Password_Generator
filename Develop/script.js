@@ -43,7 +43,7 @@ else if ( howLong > 8 ) {
   alert("Click OK to confirm including number characters.");
   alert("Click OK to confirm including lowercase characters.");
   alert("Click OK to confirm including uppercase characters.");
-
+generatePassword();
 }
 
 
@@ -63,7 +63,7 @@ else if ( howLong > 8 ) {
 
 
 function generatePassword(){
-
+console.log("hello");
 // Loop for lowercase 
 while (resultsA.length < 10) {
  resultsA += abcLow[Math.floor(Math.random() * abcLow.length)];
@@ -90,15 +90,20 @@ console.log(resultsD);
 
 // Loop to add all four to get final result  
 while (finalResults.length < 10) {
+var resultsE = resultsA + resultsB + resultsC + resultsD; 
  finalResults += resultsE[Math.floor(Math.random() * resultsE.length)];
+ console.log(resultsA + resultsB + resultsC + resultsD);
 } 
 console.log("password is " + finalResults);
 
-onclick.getElementById("buttonG").value = finalResults;
+// onclick.getElementById("buttonG"). = finalResults; 
 console.log("2" + finalResults);
 
-document.getElementById("forminput").value = finalResults;
-console.log("this " + finalResults);
+document.getElementById("buttonG").addEventListener("click", showResults);
+function showResults(){ document.getElementById("input").innerHTML = finalResults;
+
+}
+
 
 // copy command
 function myFunction() {
