@@ -22,9 +22,11 @@
           <div class="h3 text-dark weight-bold">Generate a Password</div>
           <form>
           <div class="form-group">
-              <input class="form-control form-control-l rows-12" type="text" placeholder="">
+
+            <textarea id="input" class="form-control" id="exampleFormControlTextarea1" rows="6"><p id="finalText"></p></textarea>
+
           </div>
-                <button type="button" class="btn btn-danger btn-lg float-left rounded-pill" onclick=generatePassword()>Generate Password</button>
+                <button id="button" type="button" class="btn btn-danger btn-lg float-left rounded-pill">Generate Password</button>
                 <button type="button" class="btn btn-secondary btn-lg float-right rounded-pill">Copy to Clipboard</button>
           </form>
       </div><!-- container white -->
@@ -60,10 +62,14 @@ var resultsA = "";
 var resultsB = "";
 var resultsC = "";
 var resultsD = "";
-var resultsE = [resultsA += resultsB += resultsC += resultsD];
-var finalresults = "";
+var resultsE = resultsA + resultsB + resultsC + resultsD;
+var finalResults = "";
 
-
+var howLong = prompt("Must be between 8 and 128 characters");
+var spChPrompt = confirm("Special Characters");
+var numbPrompt = confirm("Must be have Numbers");
+var abcLowPrompt = confirm("Must have lowercase characters");
+var abcUpPrompt = confirm("Must have uppercase characters");
 
 
 // }
@@ -106,15 +112,22 @@ while (resultsD.length < 10) {
 console.log(resultsD);
 
 // Loop for all four to crashes browser 
-// while (finalresults.length < 10) {
-//  finalresults += resultsE[Math.floor(Math.random() * resultsE.length)];
-// } 
-// console.log("password is " + finalresults);
+while (finalresults.length < 10) {
+ finalresults += resultsE[Math.floor(Math.random() * resultsE.length)];
+} 
+console.log("password is " + finalResults);
 
-document.getElementById("input").resultsE = finalresults;
+function buttonInput (){
+  document.getElementById("button").innerHTML = finalResults
 }
 
+function finalResults (){
+document.getElementById("finalText").innerHTML = finalResults;
+console.log("this " + finalResults)
+}
+}
 
+// text content, words, html for document value
 </script>
 
   </body>
