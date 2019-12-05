@@ -88,16 +88,16 @@ while (resultsD.length < 10) {
 } 
 console.log(resultsD);
 
-// Loop for all four to crashes browser 
-while (finalresults.length < 10) {
- finalresults += resultsE[Math.floor(Math.random() * resultsE.length)];
+// Loop to add all four to get final result  
+while (finalResults.length < 10) {
+ finalResults += resultsE[Math.floor(Math.random() * resultsE.length)];
 } 
 console.log("password is " + finalResults);
 
-onclick.getElementById("buttonG").value = finalresults;
+onclick.getElementById("buttonG").value = finalResults;
 console.log("2" + finalResults);
 
-document.getElementById("finaltext").textContent = finalResults;
+document.getElementById("finaltext").innerHTML = finalResults;
 console.log("this " + finalResults);
 
 // copy command
