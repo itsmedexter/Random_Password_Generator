@@ -97,7 +97,7 @@ console.log("password is " + finalResults);
 onclick.getElementById("buttonG").value = finalResults;
 console.log("2" + finalResults);
 
-document.getElementById("finaltext").innerHTML = finalResults;
+document.getElementById("forminput").value = finalResults;
 console.log("this " + finalResults);
 
 // copy command
