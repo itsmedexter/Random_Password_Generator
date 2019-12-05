@@ -14,7 +14,7 @@
 <div class="container-fluid bg-light">
   <div class="container">
       <header>
-          <h1 class="text-center">Password Generator</h1>
+          <h1 class="text-center">Password Generator</h1> 
         </header>
   <div class="row">
   <div class="col-12">
@@ -23,112 +23,21 @@
           <form>
           <div class="form-group">
 
-            <textarea id="input" class="form-control" id="exampleFormControlTextarea1" rows="6"><p id="finalText"></p></textarea>
+            <textarea id="input" class="form-control" id="forminput" rows="6">
+              <p id="finaltext"></p>
 
+            </textarea>
+            
           </div>
-                <button id="button" type="button" class="btn btn-danger btn-lg float-left rounded-pill">Generate Password</button>
-                <button type="button" class="btn btn-secondary btn-lg float-right rounded-pill">Copy to Clipboard</button>
+                <button id="buttonG" type="button" class="btn btn-danger btn-lg float-left rounded-pill">Generate Password</button>
+                <button type="button" id="copyb" class="btn btn-secondary btn-lg float-right rounded-pill">Copy to Clipboard</button>
           </form>
       </div><!-- container white -->
   </div><!--col-->
 </div><!--row-->
 </div><!--container light-->
 </div>
-<script type="text/javascript">
-// have a container that holds all the upper lower alphabet, numbers, special characters
-// *This changed quickly when I started to the whole string, modified approach
-
-// tell the computer to randomly pick characters from the variable  
-
-// then place the randomly picked character in another container until it reaches the min or max point
-
-// when it reaches min or max, display random generated password
-
-
-
-
-var char = [ "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"];
-
-var abcLow = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
-var abcUp = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-
-var numb = [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-
-var spCh = ["!", "@", "#", "$", "%", "^", "&", "(", ")", "_", "-", "~", ":", ";", "/", "?", "{", "}", "|", "[", "]"];
-
-
-var resultsA = "";
-var resultsB = "";
-var resultsC = "";
-var resultsD = "";
-var resultsE = resultsA + resultsB + resultsC + resultsD;
-var finalResults = "";
-
-var howLong = prompt("Must be between 8 and 128 characters");
-var spChPrompt = confirm("Special Characters");
-var numbPrompt = confirm("Must be have Numbers");
-var abcLowPrompt = confirm("Must have lowercase characters");
-var abcUpPrompt = confirm("Must have uppercase characters");
-
-
-// }
-
-// for (var a = 0; a < abcUp.length; a++){
-//   if (abcUp[a].charAt(0) === "D"){
-//     console.log("Starts with a D " + studentsRow2[a]);
-//   }
-// }
-
-
-// var emptyString = "";
-// var alphabet = "abcdefghijklmnopqrstuvwxyz";
-
-
-function generatePassword(){
-
-// Loop for lowercase 
-while (resultsA.length < 10) {
- resultsA += abcLow[Math.floor(Math.random() * abcLow.length)];
-} 
-console.log(resultsA);
-
-// Loop for uppercase 
-while (resultsB.length < 10) {
- resultsB += abcUp[Math.floor(Math.random() * abcUp.length)];
-} 
-console.log(resultsB);
-
-// Loop for numbers 
-while (resultsC.length < 10) {
- resultsC += numb[Math.floor(Math.random() * numb.length)];
-} 
-console.log(resultsC);
-
-// Loop for special characters 
-while (resultsD.length < 10) {
- resultsD += spCh[Math.floor(Math.random() * spCh.length)];
-} 
-console.log(resultsD);
-
-// Loop for all four to crashes browser 
-while (finalresults.length < 10) {
- finalresults += resultsE[Math.floor(Math.random() * resultsE.length)];
-} 
-console.log("password is " + finalResults);
-
-function buttonInput (){
-  document.getElementById("button").innerHTML = finalResults
-}
-
-function finalResults (){
-document.getElementById("finalText").innerHTML = finalResults;
-console.log("this " + finalResults)
-}
-}
-
-// text content, words, html for document value
-</script>
+<script type="text/javascript" src="script.js"></script>
 
   </body>
 </html>
