@@ -20,14 +20,14 @@ Any web browser can access or view link, repository. Use source-code editor to v
 
 ## Deployed Link
 
-* [See Live Site](https://itsmedexter.github.io/unit03_homework/)
+* [See Live Site](https://itsmedexter.github.io/Random_Password_Generator/)
 
 
 ## Authors
 
 Dexter Valencia 
 
-- [Link to Portfolio Site](https://github.com/itsmedexter/unit03_homework)
+- [Link to Portfolio Site](https://github.com/itsmedexter/Random_Password_Generator)
 - [Link to Github](https://github.com/itsmedexter)
 - [Link to LinkedIn](https://www.linkedin.com/in/dextervalencia/)
 
